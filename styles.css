@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#111, #333);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  margin-top: 30px;
+}
+.item-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.item {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+}
+.item img {
+  width: 100px;
+}

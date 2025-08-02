@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabal Pi Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="game-title">Cabal Pi Game</h1>
+    <button onclick="switchLanguage()">
+      🌐 <span id="lang-switch">العربية</span>
+    </button>
+  </header>
+
+  <main>
+    <div id="player-profile">
+      <h2 id="profile-title">Player Profile</h2>
+      <p id="wallet">Wallet: <span id="wallet-address">[Not Connected]</span></p>
+      <button onclick="connectWallet()">🔗 Connect Pi Wallet</button>
+    </div>
+
+    <section id="nft-store">
+      <h2 id="store-title">NFT Weapon Store</h2>
+      <div class="item-list">
+        <div class="item">
+          <img src="weapon1.png" alt="Weapon 1" />
+          <button onclick="buyNFT('weapon1')">Buy with Pi</button>
+        </div>
+        <div class="item">
+          <img src="weapon2.png" alt="Weapon 2" />
+          <button onclick="buyNFT('weapon2')">Buy with Pi</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="pi-sdk.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
